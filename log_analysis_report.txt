@@ -1,0 +1,73 @@
+Log File Analysis Report
+Generated on: 2025-05-10 21:07:23
+Data Source: cleaned_access_log.csv
+
+=== BASIC STATISTICS ===
+Total Requests: 10365110
+GET Requests: 10190005
+POST Requests: 139155
+Unique IP Addresses: 258601
+
+=== FAILURE ANALYSIS ===
+Failed Requests: 160573
+Failure Percentage: 1.55%
+
+=== TOP USERS ===
+Most Active IP Overall:
+ 353483 66.249.66.194
+
+Top GET Requester:
+ 353483 66.249.66.194
+
+Top POST Requester:
+  11712 151.239.241.163
+
+=== TEMPORAL ANALYSIS ===
+Average Daily Requests: 647819.38
+
+=== TOP FAILURE DAYS ===
+  22777 019-01-26 1
+  20473 019-01-23 1
+  19984 019-01-22 1
+
+=== PEAK TRAFFIC TIMES ===
+    368 2019-01-26 19:07:39
+    323 2019-01-26 19:05:58
+    313 2019-01-26 16:06:25
+    309 2019-01-26 12:39:19
+    298 2019-01-26 09:59:47
+
+=== FAILURE PEAK TIMES ===
+     17 2019-01-26 14:11:28
+     17 2019-01-25 12:00:37
+     17 2019-01-22 16:19:25
+     16 2019-01-25 19:43:11
+     16 2019-01-24 10:58:09
+
+=== STATUS CODE BREAKDOWN ===
+9100330 200
+340228 304
+182636 302
+104957 404
+63376 301
+47460 499
+5492 403
+1736 500
+323 401
+321 400
+109 408
+6 405
+3 206
+
+=== SUGGESTIONS ===
+1. Immediate Actions:
+   - Investigate failures on   22777 019-01-26 1
+   - Check server logs during peak failure time:      17 2019-01-26 14:11:28
+
+2. Security Review:
+   - Monitor GET requests from IP:  353483 66.249.66.194
+   - Monitor POST requests from IP:   11712 151.239.241.163
+
+3. Performance Optimization:
+   - Scale resources during peak traffic times shown above
+   - Review endpoints returning 4xx/5xx errors in status breakdown
