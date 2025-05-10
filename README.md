@@ -3,7 +3,7 @@
 ## Overview
 Bash script that processes web server logs (`cleaned_access_log.csv`) to generate performance and security insights.
 
-##log_analyzer.sh
+## log_analyzer.sh
 
 ## Key Features
 
